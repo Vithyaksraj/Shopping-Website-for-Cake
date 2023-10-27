@@ -1,0 +1,46 @@
+<head>
+<title>menu-page</title>
+<style>
+body{
+background-image: url('delivery.jpg');
+backgorund-repeat: no-repeat;
+background-attachment: scroll;
+background-size: 100% 100%;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link
+href="https://fonts.googleapis.com/css2?
+family=Ubuntu+Mono&display=swap"
+rel="stylesheet">
+</head>
+<body bgcolor="#F5A462">
+<form action='mail2.py' method="POST">
+<center>
+<h1><i> <u>Customer Information</u></i></h1><br><br>
+<ul>
+<h2 style='font-size:20'>Customer Name :</b>
+<input type="text"   name="nm" required><br><br>
+<b>Phone Number :</b>
+<input type="tel"   name="pn" required><br><br>
+<b>Address:</b>
+<input type="text"   name="ad" required><br><br>
+<b>Email-ID :</b>
+<input type="email"   name="em" required><br><br>
+Pay Using<br><br>
+<tr>
+<input type="radio" name="pay" value="1">Gpay<br>
+<input type="radio" name="pay" value="2">Phonepe<br>
+<input type="radio" name="pay" value="3">Paytm<br>
+<input type="radio" name="pay" value="4">UPI    <br>  
+<input type="radio" name="pay" value="5">COD  <br><br>
+</tr>
+<div style="position:relative;left:-60px;">
+<a href="mail2.py">
+<button type='submit' style="size:40px;font-size:35px;text-align: Right;background-color:green;color:white;">Paynow</button></a>
+<!--a href="index.py"-->
+<button type='submit' style="size:40px;font-size:35px;text-align: Right;background-color:green;color:white;">Cancel</button></a>
+</div>

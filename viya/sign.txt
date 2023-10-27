@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>
+sign in page
+</title>
+<center>
+<h1 style="color:maroon">SIGN UP</h1>
+</center>
+</head>
+<form action="data.py">
+<body background="sign1.jpg" style="background=repeat:no-repeat;background-size:100% "></body>
+<body>
+<div align = "center">
+<table>
+<tr>
+<td><h2 style="color:blue">NAME:</h2></td>
+<td><h2><input type="text" name="n" placeholder="enter name"></h2></td>
+</tr>
+<tr>
+<td><h2 style="color:blue">CONTACT:</h2></td>
+<td><h2><input type="phone" name="p" placeholder="phone number"></h2></td>
+</tr>
+<tr>
+<td><h2 style="color:blue">EMAI ID:</h2></td>
+<td><h2><input type="text" name="e" placeholder="enter email id"></h2></td>
+</tr>
+<tr>
+<td><h2 style="color:blue">PASSWORD:</h2></td>
+<td><h2><input type="password" name="pwd"></h2></td>
+</tr>
+<td><input type="submit" value="Submit"><a href="login.html"></td>
+<td style="color:red" >Already a user ?<a href="login.html">Login</a>
+</td>
+</table>

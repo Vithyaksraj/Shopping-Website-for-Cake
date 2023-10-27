@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<!-- custom css file link  -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- prodcuts section starts  -->
+
+<section class="products" id="products">
+<h1 class="heading"> <span>COOKIES</span> </h1>
+ <div class="box-container">
+<div class="box">
+<span class="discount">10%</span>
+<div class="image">
+<img src="cook3.jpg" width="300">
+<div class="icons">
+<a href="#" class="cart-btn">add to bag</a>
+</div>
+</div>
+<div class="content">
+<h3>chocolate chip cookie</h3>
+<div class="price"> 100 </div><br><br>
+</div>
+</div>
+<div class="box">
+<span class="discount">15%</span>
+<div class="image">
+<img src="cook1.jpg"width="300">
+<div class="icons">
+<a href="add1.html" class="cart-btn">add to bag</a>
+</div>
+</div>
+<div class="content">
+<h3>clever cookies</h3>
+<div class="price">200</div><br><br>
+</div>
+</div>
+<div class="box">
+<span class="discount">5%</span>
+<div class="image">
+<img src="cook4.jpg"width="300">
+<div class="icons">
+<a href="#" class="cart-btn">add to bag</a>
+</div>
+</div>
+<div class="content">
+<h3>chocolate chunk cookies</h3>
+<div class="price">200</div><br><br>
+</div>
+</div>
+<div class="box">
+<span class="discount">20%</span>
+<div class="image">
+<img src="cook2.jpg"width="300">
+<div class="icons">
+<a href="#" class="cart-btn">add to bag</a>
+</div>
+</div>
+<div class="content">
+<h3>mendiant</h3>
+<div class="price"> 350</div><br><br>
+</div>
+</div>
+<div class="box">
+<span class="discount">17%</span>
+<div class="image">
+<img src="cook5.jpg"width="300">
+<div class="icons">
+<a href="#" class="cart-btn">add to bag</a>
+</div>
+</div>
+<div class="content">
+<h3>red velvet cookies</h3>
+<div class="price"> 230 </div><br><br>
+</div>
+</div>
+<div class="box">
+<span class="discount">3%</span>
+<div class="image">
+<img src="cook6.jpg"width="300">
+<div class="icons">
+<a href="#" class="cart-btn">add to bag</a>
+</div>
+</div>
+<div class="content">
+<h3>thumbprint cookies</h3>
+<div class="price"> 130 </div><br><br>
+</div>
+</div>
+<div class="box">
+<span class="discount">5%</span>
+<div class="image">
+<img src="cook7.jpg"width="300">
+<div class="icons">
+<a href="#" class="cart-btn">add to bag</a>
+</div>
+</div>
+<div class="content"
+<h3>butter cookies</h3>
+<div class="price"> 100</div><br><br>          
+</div>
+<div class="box">
+<span class="discount">10%</span>
+<div class="image">
+<img src="cook8.jpg"width="300">
+<div class="icons">
+ <a href="#" class="cart-btn">add to bag</a>
+ </div>
+</div>
+<div class="content">
+<h3>chocolate brownie cookies</h3>
+<div class="price"> 230</div><br><br>
+</div>
+</div>
+</div>
+
+</section>
+</head>
+</html>
+
+<!-- prodcuts section ends -->

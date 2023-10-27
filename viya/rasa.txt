@@ -1,0 +1,234 @@
+NLU
+
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: reply
+  examples: |
+- fine
+- I am fine
+- ok
+- okk
+- okay
+- okayy
+- sure
+- done
+
+- intent: network_issue
+  examples: |
+- Actually, I gave a call regarding the network issues.
+- I called regarding network issue
+- I am facing the network issue
+
+- intent: facing_issue
+  examples: |
+- I am facing [network issues](NETWORK). Every time I give a call, there is a call drop after connection. Sometimes it also takes more than 2 minutes to connect a call.
+- facing [network issues](NETWORK) every time I make a call. Sometime it takes a time longer than usual.
+
+- intent: mobile
+  examples: |
+- I am using a [samsung](BRAND:samsung) phone.
+- I have [One plus](BRAND) mobile
+- I am using [one +](BRAND:One plus)
+- I use [I-phone](BRAND)
+- I prefer [i phone](BRAND:I-phone)
+- i am using [one plus](BRAND:One plus) mobile
+- i am using [sam sung](BRAND:samsung)
+- i am using [oneplus](BRAND:One plus) mobile
+- i am using [nokia](BRAND) mobile
+
+- intent: thanks
+  examples: |
+-thanks
+- Thank you so much!
+- tnx
+- thank you so much
+- thanks alot
+- ty
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+STORIES
+
+version: "3.1"
+
+stories:
+
+- story: issue path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: reply
+  - action: utter_reply
+  - intent: network_issue
+  - action: utter_network_issue
+  - intent: facing_issue
+  - action: utter_mobile
+  - intent: mobile
+  - action: utter_agent
+  - intent: reply
+  - action: utter_reply
+  - intent: affrim
+  - action: utter_happy
+  - intent: thanks
+  - action: utter_thanks
+  - action: utter_goodbye
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: thanks
+  - action: utter_thanks
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: thanks
+  - action: utter_thanks
+  - action: utter_goodbye
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+DOMAIN
+
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
