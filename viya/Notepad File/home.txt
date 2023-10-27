@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>riya cakes&cookies</title>
+<!-- custom css file link  -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header section starts  -->
+<header>
+<input type="checkbox" name="" id="toggler">
+<label for="toggler" class="fas fa-bars"></label>
+<a href="#" class="logo">cakes&cookies<span></span></a><br><br>
+<nav class="navbar">
+<a href="#home">home</a>
+<a href="sign.html">signup</a>
+<a href="login.html">login</a>
+<a href="products.html">products</a>
+ </nav>
+  </div>
+ <div class="icons">
+ </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+ <div class="content">
+<a href="cake.html"><center><img src="cake1.jpg" width="300"></center></a><br><br><br><br>
+<a href="cookies.html"> <center><img src="co.jpg" width="300"></center></a><br><br>
+<span>TRY OUR TASTY CAKES &COOKIES </span>
+</div>
+</section>
+<!-- home section ends -->
+<!-- footer section starts  -->
+<section class="footer">
+<div class="box-container">
+<div class="box">
+<h3>quick links</h3>
+ <a href="#">home</a>
+ <a href="sign.html">signup</a>
+ <a href="login.html">login</a>
+ <a href="products.html">products</a>
+<a href="#">contact</a>
+</div>
+<div class="box">
+<h3>contact info</h3>
+<a href="#">9234568710</a>
+<a href="#">vithyaksraj1311@gmail.com</a>
+<a href="#">chennai, india -600018</a>
+</div>
+</div>
+</section>
+<!-- footer section ends -->
+</body>
+</html>
